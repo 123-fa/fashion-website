@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f13401e790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <img src="francislogo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="accesories.html">ACCESORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>></i>
+        </nav>
+            <h1>About Us</h1>
+    </section>
+      
+    
+    <!-- ------ about us content -->
+             
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the top, Highly Branded Fashion Store</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Laudantium optio minima possimus vitae, saepe et.
+                 Eum nisi, animi esse cupiditate officia fuga doloremque veritatis non
+                  quis veniam cum quo soluta!</p>
+                  <a href=""class="hero-btn red-btn">SHOP NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="nice.jpg.jpg">
+            </div>
+        </div>
+    </section>
+
+<!-- --footer-- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Deleniti beatae doloremque dolor, excepturi, iure 
+         <br>vero autem omnis magni repellat aut inventore, recusandae aliquid quaerat perspiciatis! 
+        Sint ad laborum labore.</p>
+
+        <div class="icon" style="color: red;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p style="color: red;">Designed with <i class="fa-solid fa-heart"></i></i> By Francis Orafu</p>
+</section>
+
+
+
+
+<!-------javaScript for Toggle menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
